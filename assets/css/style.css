@@ -1,38 +1,82 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    ;
+span:has(+ nav) {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #010125;
+  padding: 0.2rem 0.3rem;
+  color: white;
+  margin-left: 85%;
 }
 
-.interface {
-    border: 2px solid black;
-    width: 100%;
-    height: 30%;
-    display: flex;
-    gap: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+.logo img {
+  width: 10rem;
 }
 
-img {
-    height: 10rem;
+nav {
+  display: flex;
+  gap: 1rem;
 }
 
-.interface_deux {
-    border: 2px solid black;
-    position: relative;
-    right: 21rem;
-
+h2 {
+  font-size: 2rem;
+  background-color: #010125;
+  color: white;
 }
 
-.haut_de_page {
-    border: 2px solid black;
-    height: 1.5rem;
-    width: 20rem;
-    text-align: right;
-    position: relative;
-    left: 87.4rem;
-    bottom: 2.18rem;
-    color: white;
-    background-color: black;
-    font-size: larger;
+section {
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
+
+.container {
+  display: flex;
+}
+.container .container__card {
+  border: 2px solid black;
+  padding: 0.5rem 6rem;
+  margin: 2rem;
+  width: 30%;
+}
+.container .container__card--cadre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container h3 {
+  margin: 0 auto;
+  font-size: 2.3rem;
+  padding: 0.5rem;
+  border-radius: 6px;
+  background-color: #010125;
+  color: white;
+}
+.container article .text-cadre {
+  background-color: #E24E42;
+  padding: 0.3rem 4.3rem;
+  color: white;
+}
+.container article .corp {
+  border: 2px solid black;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+
+.container .container__card button {
+  width: 30%;
+  margin-left: 16rem;
+  padding: 0.2rem 1rem;
+  text-align: left;
+  background-color: #591B04;
+  color: white;
+}
+
+footer {
+  border: 2px solid black;
+  background-color: #010125;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
