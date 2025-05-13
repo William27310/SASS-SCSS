@@ -1,0 +1,112 @@
+@use "../sass/typo";
+
+body {
+    background-image: url(../img/fond.webp);
+}
+
+span:has(+nav) {
+    display: flex;
+    justify-content: end;
+    background-color: #010125;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    margin-left: 85%;
+
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+    font-family: "AlfaSlobOne";
+
+    .logo img {
+        width: 10rem;
+        border: 2px solid black;
+
+    }
+
+}
+
+// Haut de page
+
+// Milieu de page
+
+section {
+
+    .container {
+        display: flex;
+        justify-content: center;
+        gap: 8rem;
+        padding-bottom: 2rem;
+        padding-top: 1rem;
+        text-align: center;
+
+        .container__card {
+            border: 2px solid black;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            width: 20rem;
+            box-shadow: 1px 1px 1px 4px black;
+
+
+            .container__card--cadre {
+
+                .text-cadre {
+                    background-color: #E24E42;
+                    padding: 0.3rem 0.3rem;
+                    width: 60%;
+                    margin-left: 3.8rem;
+                    position: relative;
+                    bottom: 0.5rem;
+                    color: white;
+                    font-weight: bolder;
+
+                }
+
+            }
+
+            .corp {
+                padding-bottom: 1rem;
+                padding-top: 1rem;
+                font-weight: bolder;
+            }
+
+            button {
+                margin-left: 12.5rem;
+                background-color: #591B04;
+                color: white;
+                padding: 0.2rem 1rem;
+                width: 38%;
+                text-align: left;
+                position: relative;
+                bottom: 0.4rem;
+
+                .triangle {}
+            }
+        }
+    }
+}
+
+article h3 {
+    border: 2px solid black;
+    position: relative;
+    padding: 1rem 1rem;
+    margin: 0.5rem auto;
+    color: white;
+    background-color: #010125;
+    font-size: 2rem;
+}
+
+
+// Milieu de page
+
+// Bas de page
+
+footer {
+    text-align: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    background-color: #010125;
+    color: white;
+    font-weight: bolder;
+}
