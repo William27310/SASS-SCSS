@@ -5,6 +5,11 @@
 body {
   background-image: url(../img/fond.webp);
 }
+@media (max-width: 412px) {
+  body {
+    background-color: red;
+  }
+}
 
 span:has(+ nav) {
   display: flex;
@@ -14,6 +19,11 @@ span:has(+ nav) {
   padding: 0.2rem 0.5rem;
   margin-left: 85%;
 }
+@media (max-width: 412px) {
+  span:has(+ nav) {
+    margin-left: 70%;
+  }
+}
 
 nav {
   display: flex;
@@ -22,7 +32,33 @@ nav {
 }
 nav .logo img {
   width: 10rem;
-  border: 2px solid black;
+}
+@media (max-width: 412px) {
+  nav .logo img {
+    width: 90%;
+  }
+}
+@media (max-width: 412px) {
+  nav .titles h1 {
+    font-size: 0.8rem;
+    width: 18rem;
+  }
+}
+nav .titles h2 {
+  background-color: #000000;
+  color: white;
+  border-radius: 6px;
+  padding: 0.5rem 0.3rem;
+}
+@media (max-width: 412px) {
+  nav .titles h2 {
+    font-size: 0.98rem;
+  }
+}
+@media (max-width: 412px) {
+  nav .titles h3 {
+    font-size: 0.8rem;
+  }
 }
 
 section .container {
@@ -59,12 +95,39 @@ section .container .container__card button {
   margin-left: 12.5rem;
   background-color: #591B04;
   color: white;
-  padding: 0.2rem 1rem;
-  width: 38%;
+  padding: 0.2rem 0.4rem;
+  width: 34%;
+  height: 4%;
   text-align: left;
   position: relative;
   bottom: 0.4rem;
 }
+@media (max-width: 412px) {
+  section .container .container__card button {
+    height: 1.8rem;
+  }
+}
+section .container .container__card button .triangle {
+  width: 0;
+  border: 0.9rem solid transparent;
+  border-top-color: white;
+  border-bottom-width: 0;
+  position: relative;
+  left: 4rem;
+  bottom: 0.8rem;
+}
+@media (max-width: 412px) {
+  section .container .container__card {
+    margin: 1.5rem;
+  }
+}
+@media (max-width: 800px) {
+  section .container {
+    display: flex;
+    flex-flow: column;
+  }
+}
+
 article h3 {
   border: 2px solid black;
   position: relative;
